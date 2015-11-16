@@ -51,7 +51,8 @@ class AdminProductsController extends Controller
      */
     public function show($id)
     {
-        //
+        $products = Product::find($id);
+        dd($products);
     }
 
     /**
